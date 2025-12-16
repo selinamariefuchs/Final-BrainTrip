@@ -1,14 +1,13 @@
-
 import React, { useState, useEffect } from 'react';
-import { AppView, Question, Suggestion, ItineraryItem, SavedTrip, DraftTrip, User } from './types';
-import { CityInput } from './components/CityInput';
-import { Quiz } from './components/Quiz';
-import { Suggestions } from './components/Suggestions';
-import { Itinerary } from './components/Itinerary';
-import { Loading } from './components/Loading';
-import { UserProfile } from './components/UserProfile';
-import { Auth } from './components/Auth';
-import { generateCityQuiz, generateTravelSuggestions } from './services/geminiService';
+import { AppView, Question, Suggestion, ItineraryItem, SavedTrip, DraftTrip, User } from '../types';
+import { CityInput } from './CityInput';
+import { Quiz } from './Quiz';
+import { Suggestions } from './Suggestions';
+import { Itinerary } from './Itinerary';
+import { Loading } from './Loading';
+import { UserProfile } from './UserProfile';
+import { Auth } from './Auth';
+import { generateCityQuiz, generateTravelSuggestions } from '../services/geminiService';
 
 const App: React.FC = () => {
   const [view, setView] = useState<AppView>(AppView.HOME);
