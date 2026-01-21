@@ -1,0 +1,11 @@
+{
+  "ios": {
+    "release": {
+      "codeSignIdentity": "Apple Distribution",
+      "provisioningProfile": "BrainTrip_App_Store",
+      "developmentTeam": "ZJS6938FRW",
+      "packageType": "app-store",
+      "automaticProvisioning": false
+    }
+  }
+}
